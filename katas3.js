@@ -225,22 +225,73 @@ kata18()
  * Daqui em diante são os bônus, por sua conta e risco
  */
 
-function kataBonus1() {
-    // implemente o código do kata bonus 1 aqui
+const containerDiv = document.createElement("div")
+body.appendChild(containerDiv)
+
+const kataBonus1 = () => {
+    for (let i = 1; i <= 20; i++){
+        const div = document.createElement("div")
+        div.style.height = "20px"
+        div.style.width = "100px"
+        div.style.backgroundColor = "grey"
+        containerDiv.appendChild(div)
+    }
 }
 
-function kataBonus2() {
-    // implemente o código do kata bonus 2 aqui
+kataBonus1()
+
+const kataBonus2 = () => {
+    let defaultWidth = 105
+    for (let i = 1; i <= 20; i++) {
+        const div = document.createElement("div")
+        div.style.width = defaultWidth + "px"
+        div.style.height = "20px"
+        div.style.backgroundColor = "grey"
+        containerDiv.appendChild(div)
+        defaultWidth += 5
+    }
 }
 
-function kataBonus3() {
-    // implemente o código do kata bonus 3 aqui
+kataBonus2()
+
+const kataBonus3 = () => {
+    for (let i = 1; i <= 20; i++) {
+        const div = document.createElement("div")
+        div.style.width = sampleArray[i] + "px"
+        div.style.height = "20px"
+        div.style.backgroundColor = "grey"
+        containerDiv.appendChild(div)
+    }
 }
 
-function kataBonus4() {
-    // implemente o código do kata bonus 4 aqui
+kataBonus3()
+
+const kataBonus4 = () => {
+    for (let i = 1; i <= 20; i++) {
+        const div = document.createElement("div")
+        div.style.width = sampleArray[i] + "px"
+        div.style.height = "20px"
+        div.style.backgroundColor = "grey"
+            if (i % 2 == 0) {
+                div.style.backgroundColor = "red"
+            }
+        containerDiv.appendChild(div)
+    }
 }
 
-function kataBonus5() {
-    // implemente o código do kata bonus 5 aqui
+kataBonus4()
+
+const kataBonus5 = () => {
+    for (let i = 1; i <= 20; i++) {
+        const div = document.createElement("div")
+        div.style.width = sampleArray[i] + "px"
+        div.style.height = "20px"
+        div.style.backgroundColor = "grey"
+            if (sampleArray[i] % 2 == 0) {
+                div.style.backgroundColor = "red"
+            }
+        containerDiv.appendChild(div)
+    }
 }
+
+kataBonus5()
