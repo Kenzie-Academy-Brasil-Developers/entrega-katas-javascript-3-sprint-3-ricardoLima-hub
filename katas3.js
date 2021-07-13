@@ -18,8 +18,8 @@ const kata1 = () => {
     for (let i = 1; i <= 25; i++) {
         output.push(i)   
     }
-    
-    return showResults("Kata 1", output.join(" "))
+    showResults("Kata 1", output.join(" "))
+    return output.join(" ")
 }
 
 kata1()
@@ -29,8 +29,8 @@ const kata2 = () => {
     for (let i = 25; i >= 1; i--){
         output.push(i)
     }
-
-    return showResults("Kata 2", output.join(" "))
+    showResults("Kata 2", output.join(" "))
+    return output.join(" ")
 }
 
 kata2()
@@ -40,7 +40,8 @@ const kata3 = () => {
    for (let i = 1; i <= 25; i++){
        output.push(i*(-1))
    }
-   return showResults("Kata 3", output.join(" "))
+   showResults("Kata 3", output.join(" "))
+   return output.join(" ")
 }
 
 kata3()
@@ -50,7 +51,8 @@ const kata4 = () => {
    for (let i = 25; i >= 1; i--){
        output.push(i*(-1))
    }
-   return showResults("Kata 4", output.join(" "))
+   showResults("Kata 4", output.join(" "))
+   return output.join(" ")
 }
 
 kata4()
@@ -60,7 +62,8 @@ const kata5 = () => {
     for (let i = 25; i >= -25; i--){
         output.push(i)
     }
-    return showResults("Kata 5", output.join(" "))
+    showResults("Kata 5", output.join(" "))
+    return output.join(" ")
 }
 
 kata5()
@@ -72,7 +75,8 @@ const kata6 = () => {
            output.push(i)
        }
    }
-   return showResults("Kata 6", output.join(" "))
+   showResults("Kata 6", output.join(" "))
+   return output.join(" ")
 }
 
 kata6()
@@ -84,7 +88,8 @@ const kata7 = () => {
             output.push(i)
         }
     }
-    return showResults("Kata 7", output.join(" "))
+    showResults("Kata 7", output.join(" "))
+    return output.join(" ")
 }
 
 kata7()
@@ -96,7 +101,8 @@ const kata8 = () => {
             output.push(i)
         }
     }
-    return showResults("Kata 8", output.join(" "))
+    showResults("Kata 8", output.join(" "))
+    return output.join(" ")
 }
 
 kata8()
@@ -108,7 +114,8 @@ const kata9 = () => {
             output.push(i)
         }
     }
-    return showResults("Kata 9", output.join(" "))
+    showResults("Kata 9", output.join(" "))
+    return output.join(" ")
 }
 
 kata9()
@@ -118,7 +125,8 @@ const kata10 = () => {
     for (let i = 0; i < sampleArray.length; i++){
         output.push(sampleArray[i])
     }
-    return showResults("Kata 10", output.join(" "))
+    showResults("Kata 10", output.join(" "))
+    return output.join(" ")
 }
 
 kata10()
@@ -130,7 +138,8 @@ const kata11 = () => {
             output.push(sampleArray[i])
         }
     }
-    return showResults("Kata 11", output.join(" "))
+    showResults("Kata 11", output.join(" "))
+    return output.join(" ")
 }
 
 kata11()
@@ -142,7 +151,8 @@ const kata12 = () => {
             output.push(sampleArray[i])
         }
     }
-    return showResults("Kata 12", output.join(" "))
+    showResults("Kata 12", output.join(" "))
+    return output.join(" ")
 }
 
 kata12()
@@ -154,7 +164,8 @@ const kata13 = () => {
             output.push(sampleArray[i])
         }
     }
-    return showResults("Kata 13", output.join(" "))
+    showResults("Kata 13", output.join(" "))
+    return output.join(" ")
 }
 
 kata13()
@@ -164,7 +175,8 @@ const kata14 = () => {
     for (let i = 0; i < sampleArray.length; i++){
         output.push(sampleArray[i]**2)
     }
-    return showResults("Kata 14", output.join(" "))
+    showResults("Kata 14", output.join(" "))
+    return output.join(" ")
 }
 
 kata14()
@@ -176,7 +188,8 @@ const kata15 = () => {
         soma += i
         output.push(soma)
     }
-    return showResults("Kata 15", output.join(" "))
+    showResults("Kata 15", output.join(" "))
+    return output.join(" ")
 }
 
 kata15()
@@ -188,7 +201,8 @@ const kata16 = () => {
         soma += sampleArray[i] 
     }
     output.push(soma)
-    return showResults("Kata 16", `A soma de <em>sampleArray</em> é: <strong>${output.join(" ")}</strong>`)
+    showResults("Kata 16", `A soma de <em>sampleArray</em> é: <strong>${output.join(" ")}</strong>`)
+    return output.join(" ")
 } 
  
 kata16()
@@ -202,7 +216,8 @@ const kata17 = () => {
         }
     }
     output.push(verifica)
-    return showResults("Kata 17", `O menor elemento em <em>sampleArray</em> é: <strong>${output.join(" ")}</strong>`)
+    showResults("Kata 17", `O menor elemento em <em>sampleArray</em> é: <strong>${output.join(" ")}</strong>`)
+    return output.join(" ")
 }
 
 kata17()
@@ -216,7 +231,8 @@ const kata18 = () => {
         }
     }
     output.push(verifica)
-    return showResults("Kata 18", `O maior elemento em <em>sampleArray</em> é: <strong>${output.join(" ")}</strong>`)
+    showResults("Kata 18", `O maior elemento em <em>sampleArray</em> é: <strong>${output.join(" ")}</strong>`)
+    return output.join(" ")
 }
 
 kata18()
