@@ -186,8 +186,8 @@ const kata15 = () => {
     let soma = 0
     for (let i = 1; i <= 20; i++){
         soma += i
-        output.push(soma)
     }
+    output.push(soma)
     showResults("Kata 15", output.join(" "))
     return output.join(" ")
 }
@@ -245,11 +245,19 @@ const containerDiv = document.createElement("div")
 body.appendChild(containerDiv)
 
 const kataBonus1 = () => {
+    const title = document.createElement("h3")
+    const text = document.createElement("p")
+    text.innerHTML = `Kata Bônus 1`
+    title.appendChild(text)
+    containerDiv.appendChild(title)
     for (let i = 1; i <= 20; i++){
         const div = document.createElement("div")
         div.style.height = "20px"
         div.style.width = "100px"
+        div.style.margin = "3px"
         div.style.backgroundColor = "grey"
+        div.style.border = "3px solid black"
+        div.style.borderRadius = "5px"
         containerDiv.appendChild(div)
     }
 }
@@ -257,12 +265,20 @@ const kataBonus1 = () => {
 kataBonus1()
 
 const kataBonus2 = () => {
+    const title = document.createElement("h3")
+    const text = document.createElement("p")
+    text.innerHTML = `Kata Bônus 2`
+    title.appendChild(text)
+    containerDiv.appendChild(title)
     let defaultWidth = 105
     for (let i = 1; i <= 20; i++) {
         const div = document.createElement("div")
         div.style.width = defaultWidth + "px"
         div.style.height = "20px"
         div.style.backgroundColor = "grey"
+        div.style.margin = "3px"
+        div.style.border = "3px solid black"
+        div.style.borderRadius = "5px"
         containerDiv.appendChild(div)
         defaultWidth += 5
     }
@@ -271,11 +287,19 @@ const kataBonus2 = () => {
 kataBonus2()
 
 const kataBonus3 = () => {
-    for (let i = 1; i <= 20; i++) {
+    const title = document.createElement("h3")
+    const text = document.createElement("p")
+    text.innerHTML = `Kata Bônus 3`
+    title.appendChild(text)
+    containerDiv.appendChild(title)
+    for (let i = 0; i < 20; i++) {
         const div = document.createElement("div")
         div.style.width = sampleArray[i] + "px"
         div.style.height = "20px"
         div.style.backgroundColor = "grey"
+        div.style.margin = "3px"
+        div.style.border = "3px solid black"
+        div.style.borderRadius = "5px"
         containerDiv.appendChild(div)
     }
 }
@@ -283,11 +307,19 @@ const kataBonus3 = () => {
 kataBonus3()
 
 const kataBonus4 = () => {
-    for (let i = 1; i <= 20; i++) {
+    const title = document.createElement("h3")
+    const text = document.createElement("p")
+    text.innerHTML = `Kata Bônus 4`
+    title.appendChild(text)
+    containerDiv.appendChild(title)
+    for (let i = 0; i < 20; i++) {
         const div = document.createElement("div")
         div.style.width = sampleArray[i] + "px"
         div.style.height = "20px"
         div.style.backgroundColor = "grey"
+        div.style.margin = "3px"
+        div.style.border = "3px solid black"
+        div.style.borderRadius = "5px"
             if (i % 2 == 0) {
                 div.style.backgroundColor = "red"
             }
@@ -298,11 +330,19 @@ const kataBonus4 = () => {
 kataBonus4()
 
 const kataBonus5 = () => {
-    for (let i = 1; i <= 20; i++) {
+    const title = document.createElement("h3")
+    const text = document.createElement("p")
+    text.innerHTML = `Kata Bônus 5`
+    title.appendChild(text)
+    containerDiv.appendChild(title)
+    for (let i = 0; i < 20; i++) {
         const div = document.createElement("div")
         div.style.width = sampleArray[i] + "px"
         div.style.height = "20px"
         div.style.backgroundColor = "grey"
+        div.style.margin = "3px"
+        div.style.border = "3px solid black"
+        div.style.borderRadius = "5px"
             if (sampleArray[i] % 2 == 0) {
                 div.style.backgroundColor = "red"
             }
